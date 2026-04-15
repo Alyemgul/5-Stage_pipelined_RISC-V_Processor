@@ -1,4 +1,4 @@
-# 🥉 5-Stage Pipelined RISC-V Processor (Verilog)
+5-Stage Pipelined RISC-V Processor (Verilog)
 
 ## 📌 Overview
 
