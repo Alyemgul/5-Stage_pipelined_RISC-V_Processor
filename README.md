@@ -1,6 +1,6 @@
-5-Stage Pipelined RISC-V Processor (Verilog)
+# 5-Stage Pipelined RISC-V Processor (Verilog)
 
-## 📌 Overview
+##  Overview
 
 This project implements a **simplified 5-stage pipelined RISC-V processor** in Verilog, demonstrating core concepts of modern CPU design including instruction pipelining, hazard detection, and data forwarding.
 
@@ -8,7 +8,7 @@ The processor executes a small program and is fully verified using simulation in
 
 ---
 
-## ⚙️ Architecture
+##  Architecture
 
 The processor follows a standard 5-stage pipeline:
 
@@ -22,7 +22,7 @@ The processor follows a standard 5-stage pipeline:
 
 ---
 
-## 🔧 Features
+##  Features
 
 - 5-stage pipelined architecture
 - Program Counter (PC)
@@ -38,7 +38,7 @@ The processor follows a standard 5-stage pipeline:
 
 ---
 
-## 🚧 Hazard Handling
+##  Hazard Handling
 
 ### Data Hazards
 Handled using a **forwarding unit**:
@@ -56,23 +56,23 @@ Handled using:
 
 ---
 
-## 📊 Simulation Results
+##  Simulation Results
 
-### 🔄 Pipeline Execution
+###  Pipeline Execution
 ![Pipeline Execution](docs/pipeline_execution.png)
 
 The waveform shows instructions progressing through the pipeline stages (IF → ID → EX → MEM → WB).
 
 ---
 
-### ⚡ Hazard Handling & Forwarding
+###  Hazard Handling & Forwarding
 ![Forwarding](docs/forwarding_hazard.png)
 
 Forwarding signals (`forwardA`, `forwardB`) dynamically resolve data hazards by selecting data from later pipeline stages. Stall/branch signals indicate pipeline control behavior.
 
 ---
 
-### ✅ Final Register & Memory State
+###  Final Register & Memory State
 ![Final State](docs/final_registers.png)
 
 The final waveform confirms correct execution of the program.
@@ -91,7 +91,7 @@ The final waveform confirms correct execution of the program.
 
 ---
 
-## 🧪 Test Program
+##  Test Program
 
 The processor executes a small sequence of instructions including:
 - arithmetic operations
@@ -101,7 +101,7 @@ The processor executes a small sequence of instructions including:
 
 ---
 
-## ▶️ How to Run (ModelSim)
+##  How to Run (ModelSim)
 
 ```tcl
 vlib work
